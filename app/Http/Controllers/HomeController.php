@@ -10,4 +10,8 @@ class HomeController extends Controller
     function index() {
         return view('home');
     }
+
+    function article($id) {
+        return view('article', ['id' => $id]);
+    }
 }

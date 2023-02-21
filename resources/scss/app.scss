@@ -4,6 +4,13 @@ a.cardArticle {
     &:hover {
         text-decoration: none;        
     }
+    h3{
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 80px;
+        margin-bottom: 10px;
+    }
 }
 
 nav{
@@ -26,7 +33,7 @@ nav{
             transform: scale(1.05);
         }
         article{
-            height: 80vh;
+            height: 50vh;
 
             image{
                 height: 20vh;

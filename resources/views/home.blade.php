@@ -2,7 +2,7 @@
       <section class="grid">
 
         @foreach($articles as $article)
-            <a href="/article/{{ $article->id }}">
+            <a href="/article/{{ $article->id }}" class="cardArticle">
               <article>
                 <hgroup>
                   <h3>{{ $article->title }}</h3>

@@ -1,2 +1,8 @@
 @import "@picocss/pico/scss/pico";
 
+a.cardArticle {
+    &:hover {
+        text-decoration: none;
+        transform: scale(1.05);
+    }
+}

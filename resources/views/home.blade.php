@@ -6,7 +6,7 @@
               <article>
                 <hgroup>
                   <h3>{{ $article->title }}</h3>
-                  <h4>{{ $article->subtitle }}</h4>
+                  <h5>{{ $article->subtitle }}</h5>
                   <small>Publié le {{ $article->updated_at }}</small>
                 </hgroup>
                 <img src="{{ $article->image }}">

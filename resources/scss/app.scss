@@ -6,3 +6,28 @@ a.cardArticle {
         transform: scale(1.05);
     }
 }
+
+nav{
+
+    text-align: center;
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+
+//Media query for large screens (≥992px)
+@media (min-width: 992px) {
+    a.cardArticle {
+        article{
+            height: 80vh;
+
+            image{
+                height: 20vh;
+            }
+        }
+    }
+}

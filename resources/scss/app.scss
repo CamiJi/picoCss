@@ -8,7 +8,7 @@ a.cardArticle {
 
         overflow: hidden;
         text-overflow: ellipsis;
-        height: 80px;
+        height: 100px;
         margin-bottom: 10px;
     }
 }
@@ -23,6 +23,10 @@ nav{
 
 }
 
+footer{
+    text-align: center;
+}
+
 
 
 //Media query for large screens (≥992px)
@@ -33,7 +37,7 @@ nav{
             transform: scale(1.05);
         }
         article{
-            height: 50vh;
+            height: 60vh;
 
             image{
                 height: 20vh;

@@ -11,7 +11,5 @@ class HomeController extends Controller
         return view('home');
     }
 
-    // function article($id) {
-    //     return view('article', ['id' => $id]);
-    // }
+
 }

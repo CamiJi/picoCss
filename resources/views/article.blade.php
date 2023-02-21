@@ -5,6 +5,7 @@
     <h2>Le décès est survenu en 2089</h2>
     <small>Publié le 01/01/2021 par Camille Aubert</small>
     </hgroup>
+    <br />
     <img src="https://via.placeholder.com/1300x300/2c3d49">
     <h3>Quand</h3>
     <p>

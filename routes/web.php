@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,5 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/article/{id}', [HomeController::class, 'article'])->name('article');
+Route::get('/article/{id}', [ArticleController::class, 'article'])->name('article');
 

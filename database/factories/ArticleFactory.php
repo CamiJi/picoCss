@@ -17,7 +17,14 @@ class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            
+                'title' => $this->faker->sentence(),
+                'subtitle' => $this->faker->sentence(),
+                'content' => $this->faker->paragraphs(3, true),
+                'image' => 'https://picsum.photos/640/480?random=' . $this->faker->numberBetween(1, 100),
+                'published_at' => $this->faker->dateTimeThisYear(),
+            
         ];
     }
+
 }

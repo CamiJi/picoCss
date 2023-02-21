@@ -1,5 +1,24 @@
 @import "@picocss/pico/scss/pico";
 
+body{
+    position: relative;
+}
+
+div#wave{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    z-index: 1;
+    // background-color:aqua
+}
+
+main{
+    position:relative;
+    z-index:2;
+}
+
 a.cardArticle {
     &:hover {
         text-decoration: none;        
@@ -14,6 +33,10 @@ a.cardArticle {
 }
 
 nav{
+
+    h1, h2{
+        color:white;
+    }
 
     text-align: center;
     svg{
@@ -31,6 +54,11 @@ footer{
 
 //Media query for large screens (≥992px)
 @media (min-width: 992px) {
+    nav{
+        h1, h2{
+            color:white;
+        }
+    }
     a.cardArticle {
 
         &:hover{

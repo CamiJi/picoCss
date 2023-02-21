@@ -2,8 +2,7 @@
 
 a.cardArticle {
     &:hover {
-        text-decoration: none;
-        transform: scale(1.05);
+        text-decoration: none;        
     }
 }
 
@@ -22,6 +21,10 @@ nav{
 //Media query for large screens (≥992px)
 @media (min-width: 992px) {
     a.cardArticle {
+
+        &:hover{
+            transform: scale(1.05);
+        }
         article{
             height: 80vh;
 

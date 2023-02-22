@@ -33,16 +33,26 @@ a.cardArticle {
 }
 
 nav{
+    margin-top: 30px;
+    #reseauxSociaux{
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        display: inline-flex;
+        justify-content: space-around;
+        height: 40px;
+        width: 150px;
 
-    h1, h2{
-        color:white;
+        a{
+            height: 40px;
+            svg{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        
     }
 
-    text-align: center;
-    svg{
-        width: 30px;
-        height: 30px;
-    }
+
 
 }
 
@@ -54,11 +64,7 @@ footer{
 
 //Media query for large screens (≥992px)
 @media (min-width: 992px) {
-    nav{
-        h1, h2{
-            color:white;
-        }
-    }
+
     a.cardArticle {
 
         &:hover{
@@ -70,6 +76,14 @@ footer{
             image{
                 height: 20vh;
             }
+        }
+    }
+}
+
+@media (min-width : 1200px){
+    nav{
+        h1, h2{
+            color:white;
         }
     }
 }

@@ -1,64 +1,100 @@
 @import "@picocss/pico/scss/pico";
 
 body{
-    position: relative;
-}
 
-div#wave{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 450px;
-    z-index: 1;
-    // background-color:aqua
-}
+    background-color: #EBEBEB;
 
-main{
-    position:relative;
-    z-index:2;
-}
-
-a.cardArticle {
-    &:hover {
-        text-decoration: none;        
+    div#wave{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 450px;
+        z-index: 1;
+         
     }
-    h3{
 
-        overflow: hidden;
-        text-overflow: ellipsis;
-        height: 100px;
-        margin-bottom: 10px;
-    }
-}
+    main{
+        position:relative;
+        z-index:2;
 
-nav{
-    margin-top: 30px;
-    #reseauxSociaux{
-        background-color: white;
-        border-radius: 20px 20px 20px 20px;
-        display: inline-flex;
-        justify-content: space-around;
-        height: 40px;
-        width: 150px;
-
-        a{
-            height: 40px;
-            svg{
-                width: 30px;
-                height: 30px;
+        nav{
+            margin-top: 30px;
+        
+            #reseauxSociaux{
+                background-color: white;
+                border-radius: 20px 20px 20px 20px;
+                display: inline-flex;
+                justify-content: space-around;
+                height: 40px;
+                width: 150px;
+                margin-top : 10px;
+                border-radius: 50px;
+                background: #e0e0e0;
+                box-shadow: inset 2px 2px 6px #bebebe,
+                            inset -2px -2px 6px #ffffff;
+        
+                a{
+                    height: 40px;
+                    
+                    svg{
+                        margin-top: 5px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                
             }
+        
+        
+        
         }
         
+
+
+        a.cardArticle {
+
+            &:hover {
+                text-decoration: none;        
+            }
+
+            article{
+                border-radius: 50px;
+                background: #e0e0e0;
+                box-shadow:  7px 7px 14px #5a5a5a,
+                             -7px -7px 14px #ffffff;
+
+                h3{
+        
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    height: 100px;
+                    margin-bottom: 10px;
+                }
+
+            }
+
+
+
+        }
+
+
+        
+
+    }
+    
+    footer{
+        text-align: center;
     }
 
-
-
 }
 
-footer{
-    text-align: center;
-}
+
+
+
+
+
+
 
 
 

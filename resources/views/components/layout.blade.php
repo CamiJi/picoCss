@@ -7,11 +7,6 @@
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
   </head>
   <body>
-    <div id="wave">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#0099ff" fill-opacity="1" d="M0,288L80,261.3C160,235,320,181,480,170.7C640,160,800,192,960,170.7C1120,149,1280,75,1360,37.3L1440,0L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-      </svg>
-    </div>
     <main class="container">
       <nav>
           <a href="{{ route("home") }}">

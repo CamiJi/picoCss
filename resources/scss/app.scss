@@ -2,18 +2,6 @@
 
 body{
 
-    background-color: #EBEBEB;
-
-    div#wave{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 450px;
-        z-index: 1;
-         
-    }
-
     main{
         position:relative;
         z-index:2;
@@ -22,17 +10,12 @@ body{
             margin-top: 30px;
         
             #reseauxSociaux{
-                background-color: white;
                 border-radius: 20px 20px 20px 20px;
                 display: inline-flex;
                 justify-content: space-around;
                 height: 40px;
                 width: 150px;
                 margin-top : 10px;
-                border-radius: 50px;
-                background: #e0e0e0;
-                box-shadow: inset 2px 2px 6px #bebebe,
-                            inset -2px -2px 6px #ffffff;
         
                 a{
                     height: 40px;
@@ -60,9 +43,6 @@ body{
 
             article{
                 border-radius: 50px;
-                background: #e0e0e0;
-                box-shadow:  7px 7px 14px #5a5a5a,
-                             -7px -7px 14px #ffffff;
 
                 h3{
         
@@ -112,14 +92,6 @@ body{
             image{
                 height: 20vh;
             }
-        }
-    }
-}
-
-@media (min-width : 1200px){
-    nav{
-        h1, h2{
-            color:white;
         }
     }
 }

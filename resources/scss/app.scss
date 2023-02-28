@@ -23,13 +23,22 @@ body{
         
         }
         
+        a:hover {
+            text-decoration: none;        
+        }
 
+        section#pagination{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            a{
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
 
         a.cardArticle {
-
-            &:hover {
-                text-decoration: none;        
-            }
 
             article{
                 border-radius: 10px;

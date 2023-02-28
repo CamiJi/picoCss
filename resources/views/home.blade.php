@@ -1,6 +1,10 @@
-<x-layout>
-      <section class="grid">
+<x-layout>    
 
+      <section class="grid" id="pagination">
+        <a href="{{ route("home") }}?page={{$previousPage}}"><small><</small></a>
+        <a href="{{ route("home") }}?page={{$nextPage}}"><small>></small></a>
+      </section>
+      <section class="grid">
         @foreach($articles as $article)
             <a href="/article/{{ $article->id }}" class="cardArticle">
               <article>
@@ -12,7 +16,7 @@
                 <img src="{{ $article->image }}">
               </article>
             </a>
-        @endforeach
-
+        @endforeach 
       </section>
+      
 </x-layout>

@@ -22,7 +22,7 @@ class ArticleFactory extends Factory
                 'subtitle' => $this->faker->sentence(),
                 'content' => $this->faker->paragraphs(3, true),
                 'image' => 'https://picsum.photos/640/480?random=' . $this->faker->numberBetween(1, 100),
-                'published_at' => $this->faker->dateTimeThisYear(),
+                'published_at' => $this->faker->dateTimeThisYear()
             
         ];
     }

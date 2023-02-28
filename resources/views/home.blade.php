@@ -1,8 +1,10 @@
 <x-layout>    
 
       <section class="grid" id="pagination">
-        <a href="{{ route("home") }}?page={{$previousPage}}"><small><</small></a>
-        <a href="{{ route("home") }}?page={{$nextPage}}"><small>></small></a>
+        @if (!empty($previousPage))
+          <div><a href="{{ route("home") }}?page={{$previousPage}}"><small><</small></a></div>
+        @endif
+          <div><a href="{{ route("home") }}?page={{$nextPage}}"><small>></small></a></div>
       </section>
       <section class="grid">
         @foreach($articles as $article)

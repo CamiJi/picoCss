@@ -10,7 +10,7 @@
         </hgroup>
         <br />
         {{-- <img src="{{ $article->image }}">  --}}
-        <p>{{ $article->content }}</p>
+        <p>{!! $article->content !!}</p>
         
     </div>
 

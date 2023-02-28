@@ -10,6 +10,8 @@ class ArticleController extends Controller
     function article($id) {
 
             $article = Article::findOrFail($id);
+
+            // dd($article->content);
             
 
         return view('article', ['article' => $article]);

@@ -14,6 +14,7 @@ class HomeController extends Controller
         $nextPage = $currentPage + 1;
         $previousPage = ($currentPage > 1) ? $currentPage - 1 : null;
         $articles = Article::paginate(3);
+        // dd($articles);
 
         return view('home', ['articles' => $articles,
                             'nextPage' => $nextPage,

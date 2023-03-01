@@ -2,6 +2,10 @@
 
 body{
 
+    a:hover {
+        text-decoration: none;        
+    }
+
     main{
 
         nav{
@@ -23,9 +27,7 @@ body{
         
         }
         
-        a:hover {
-            text-decoration: none;        
-        }
+
 
         section#pagination{
             display: flex;
@@ -41,7 +43,6 @@ body{
         a.cardArticle {
 
             article{
-                border-radius: 10px;
 
                 h3{
         
@@ -49,11 +50,7 @@ body{
                     height: 100px;
                     margin-bottom: 10px;
                 }
-
             }
-
-
-
         }       
 
     }

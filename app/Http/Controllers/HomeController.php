@@ -13,7 +13,9 @@ class HomeController extends Controller
         $currentPage = $request->page;
         $nextPage = $currentPage + 1;
         $previousPage = ($currentPage > 1) ? $currentPage - 1 : null;
-        $articles = Article::paginate(3);
+        $articles = Article::find(1)
+               ->orderBy('published_at', 'desc')
+               ->paginate(3);
         // dd($articles);
 
         return view('home', ['articles' => $articles,

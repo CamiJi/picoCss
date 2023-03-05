@@ -4,8 +4,10 @@
         @if (!empty($previousPage))
           <div><a href="{{ route("home") }}?page={{$previousPage}}"><small><</small></a></div>
         @endif
+        @if(!empty($nextPage))
           <div><a href="{{ route("home") }}?page={{$nextPage}}"><small>></small></a></div>
-      </section>
+        @endif
+        </section>
       <section class="grid">
         @foreach($articles as $article)
             <a href="/article/{{ $article->id }}" class="cardArticle">

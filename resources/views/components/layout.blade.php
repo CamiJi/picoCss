@@ -17,9 +17,7 @@
   <body>
     <main class="container">
       <nav>
-          <a href="{{ route("home") }}">
-                 
-                  <img src="../assets/icons/logo.png" alt="logo du blog">
+          <a href="{{ route("home") }}">                 
                   <hgroup>
                       <h1>PicoBlog</h1>
                       <h2>Camille Aubert</h2>                

@@ -18,10 +18,19 @@
     <main class="container">
       <nav>
           <a href="{{ route("home") }}">                 
-                  <hgroup>
+                  {{-- <hgroup>
                       <h1>PicoBlog</h1>
                       <h2>Camille Aubert</h2>                
-                  </hgroup>
+                  </hgroup> --}}
+                  <div id="header">
+                      <div class="logo">
+                          <img src="../assets/icons/logo.png">
+                      </div>
+                      <div id="hrgroup">
+                          <h1>PicoBlog</h1>
+                          <h2>Camille Aubert</h2>
+                      </div>
+                  </div>
           </a>
           <div id="reseauxSociaux">
             <a href="https://github.com/CamiJi" target="_blank">

@@ -17,6 +17,7 @@ body{
         nav{
             margin-top: 30px;
             flex-wrap: wrap;
+            justify-content: center;
 
 
             div#header{
@@ -110,16 +111,26 @@ body{
 //Media query for large screens (≥992px)
 @media (min-width: 992px) {
 
-    a.cardArticle {
+    body{
 
-        &:hover{
-            transform: scale(1.05);
-        }
-        article{
-            height: 60vh;
-
-            image{
-                height: 20vh;
+        main{
+    
+            nav{
+                justify-content: space-between;
+            }
+            
+            a.cardArticle {
+    
+                &:hover{
+                    transform: scale(1.05);
+                }
+                article{
+                    height: 60vh;
+    
+                    image{
+                        height: 20vh;
+                    }
+                }
             }
         }
     }
